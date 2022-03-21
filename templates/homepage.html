@@ -1,0 +1,39 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block content %}
+
+	<section class="home">
+		<label class="heading">Welcome to NAP Banking System</label>
+
+    <div class="features">
+        <div>
+            <figure>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgYoElwmprsU53kh3gXYsnoim6NEGYv04d-JgFwlgsAejzhFIRl_BS76Az5_rI4Qd9_b4&usqp=CAU" alt="">
+            </figure>
+            <a href="{% url 'customers' %}" class="btn">
+                View all users
+            </a>
+        </div>
+
+        <div>
+            <figure>
+                <img src="https://s3.amazonaws.com/newpay1site/blog/wp-content/uploads/2019/05/17th-may-blog-1024x683.png" alt="">
+            </figure>
+            <a href="{% url 'customers' %}" class="btn">
+                Transfer Money
+            </a>
+        </div>
+
+        <div>
+            <figure>
+                <img src="https://cdn-icons-png.flaticon.com/512/2534/2534227.png" alt="">
+            </figure>
+            <a href="{% url 'transactions' %}" class="btn">
+                View Transfer History
+            </a>
+        </div>
+	</div>
+	</section>
+
+    {% endblock %}
